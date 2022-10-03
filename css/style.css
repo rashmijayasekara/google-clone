@@ -1,0 +1,107 @@
+@import url(reset.css);
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.clearfix{
+    clear: both;
+}
+.clearfix::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+header a{
+    display: block;
+}
+#apps{
+    display: flex;
+}
+#apps svg{
+    width: 24px;
+    height: 24px;
+    fill: #5f6368;
+}
+header{
+    display: flex; /*giving the flex layout to the children inside the header*/
+    justify-content: flex-end;
+    padding: 6px;
+    height: 60px;
+    align-items: center;
+
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+header a{
+   text-decoration: none;
+   color: rgba(0, 0, 0, 0.87);
+   font-size: 13px;
+   line-height: 24px;
+   
+
+}
+header:last-child{
+
+}
+#sign-in{
+    background-color: rgb(26, 115,232);
+    color: white;
+    font-size: 14px;
+    line-height: 24px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-weight: 500px;
+    margin: 0px 12px 8px;
+    min-width: 96px;
+}
+#sign-in:hover{
+    background-color: #1b66c9;
+    box-shadow: ;
+}
+header a button:active{
+    background-color: #1b63c1;
+    box-shadow: ;
+}
+#sign-in:focus{
+    background-color: #1c5fba;
+    box-shadow: ;
+}
+#images{
+    /* width: 40px; */
+    height: 40px;
+    padding: 0 15px;
+    justify-items: center;
+    padding-top: 6px;
+}
+#gmail{
+    /* width: 40px; */
+    height: 40px;
+    padding-left: 15px;
+    padding-top: 6px;
+   
+}
+#apps{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#apps:hover{
+    background-color: rgba(60,64,67,0.8);
+    cursor: pointer;
+}
+#sign-in{
+    font-size: 14px;
+
+}
