@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" onclick="document.querySelector('aside').style.visibility='hidden';">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,23 +8,191 @@
     <title>Google Clone</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="https://www.google.com/favicon.ico">
+    <link rel="stylesheet" href="css/responsive.cssd">
 </head>
+
 <body>
     <header>
         <a id="gmail" href="https://mail.google.com/mail/?authuser=0&ogbl">Gamil</a>
         <a id="images" href="https://www.google.lk/imghp?hl=en&authuser=0&ogbl">Images</a>
-        <a id="apps" href="https://www.google.lk/intl/en/about/products"><svg class="gb_Ue" focusable="false" viewBox="0 0 24 24"><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path></svg></a>
-        <a href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.com/" id="sign-in">Sign In</a>
+        <div id="apps"
+            onclick="event.stopImmediatePropagation(); document.querySelector('aside').style.visibility='visible';"
+            href=""><svg class="gb_Ue" focusable="false" viewBox="0 0 24 24">
+                <path
+                    d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z">
+                </path>
+            </svg></div>
+        <a href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.com/" id="sign-in">Sign
+            In</a>
     </header>
-    <div>
-        <div class="container" id="google-img"><img style="border:none;margin:8px 0" height="92px" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" width="272px" id="hplogo" alt="Google" data-atf="1" data-frt="0"></div>
-        <div class="container" id="search-bar"><div id="search-wrapper"><span><svg id="svg-1" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></span><input type="text"><div id="svg-wrapper"><svg id="svg-2" class="goxjub" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#4285f4" d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z"></path><path fill="#34a853" d="m11 18.08h2v3.92h-2z"></path><path fill="#fbbc05" d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z"></path><path fill="#ea4335" d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z"></path></svg></span></div></div></div>
-        <div class="container" id="below-search"><div id="col-1-b-s" class="c-1">Google Search</div><div id="col-2-b-s" class="c-1">I'm Feeling Lucky</div></div>
-        <div class="container" id="final"><div id="offered"><span>Google offered in : </span><a href="https://www.google.com/setprefs?sig=0_2-HC-c8-4d4QdgbdBa4Atk_6wT8%3D&amp;hl=si&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwidq7-nusP6AhUjUGwGHX1WAs0Q2ZgBCBA" id="sinhala">සිංහල</a><a href="https://www.google.com/setprefs?sig=0_2-HC-c8-4d4QdgbdBa4Atk_6wT8%3D&amp;hl=ta&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjWkJK7usP6AhXKTGwGHa3_CGgQ2ZgBCBE">தமிழ்</a></div></div>
+    <div id="main">
+        <div class="container" id="google-img"><img style="border:none;margin:8px 0" height="92px"
+                src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" width="272px"
+                id="hplogo" alt="Google" data-atf="1" data-frt="0"></div>
+        <form id="search-form" action="searchresult.html" method="GET">
+            <div class="container" id="search-bar">
+                <div id="search-wrapper"><span>
+                        <svg id="svg-1" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                            </path>
+                        </svg></span>
+                    <input type="text" name="q">
+                    <div id="svg-wrapper"><svg id="svg-2" class="goxjub" focusable="false" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#4285f4"
+                                d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z">
+                            </path>
+                            <path fill="#34a853" d="m11 18.08h2v3.92h-2z"></path>
+                            <path fill="#fbbc05"
+                                d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z">
+                            </path>
+                            <path fill="#ea4335"
+                                d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z">
+                            </path>
+                        </svg></span></div>
+                </div>
+            </div>
+            <div class="container" id="below-search"><button id="col-1-b-s" class="c-1">Google Search</button><button
+                    type="button" id="col-2-b-s" class="c-1">I'm Feeling Lucky</button></div>
+        </form>
+        <div class="container" id="final">
+            <div id="offered"><span>Google offered in : </span><a
+                    href="https://www.google.com/setprefs?sig=0_2-HC-c8-4d4QdgbdBa4Atk_6wT8%3D&amp;hl=si&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwidq7-nusP6AhUjUGwGHX1WAs0Q2ZgBCBA"
+                    id="sinhala">සිංහල</a><a
+                    href="https://www.google.com/setprefs?sig=0_2-HC-c8-4d4QdgbdBa4Atk_6wT8%3D&amp;hl=ta&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjWkJK7usP6AhXKTGwGHa3_CGgQ2ZgBCBE">தமிழ்</a>
+            </div>
+        </div>
     </div>
     <div id="empty"></div>
     <div id="sl">Sri Lanka</div>
-    <footer><div id="footer-left"><span>About</span><span>Advertising</span><span>Business</span><span>How Search Works</span></div>
-    <div id="footer-right"><span id="abt">Privacy</span><span>Terms</span><span>Settings</span><span></div></footer>
+    <footer>
+        <div id="footer-left"><span><a
+                    href="https://about.google/?utm_source=google-LK&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a></span><span><a
+                    href="https://www.google.com/intl/en_lk/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></span><span><a
+                    href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a></span><span><a
+                    href="https://google.com/search/howsearchworks/?fg=1">How Search Works</a></span></div>
+        <div id="footer-right"><span id="abt"><a
+                    href="https://policies.google.com/privacy?hl=en-LK&fg=1">Privacy</a></span><span><a
+                    href="https://policies.google.com/terms?hl=en-LK&fg=1">Terms</a></span><span>Settings</span><span>
+        </div>
+    </footer>
+    <aside onclick="event.stopImmediatePropagation()">
+        <div id="mn">        <ul class="aside-ul">
+            <li class="aside-li"><a class="a-l-a"
+                    href="https://myaccount.google.com/?utm_source=OGB&amp;utm_medium=app">
+                    <div class="span-1"><span class="icon" id="one"></span></div><span class="span-3">Account</span>
+                </a></li>
+            <li class="aside-li"><a class="a-l-a" href="https://www.google.lk/webhp">
+                    <div class="span-1"><span class="icon" id="two"></span></div><span class="span-3">Search</span>
+                </a></li>
+            <li class="aside-li"><a class="a-l-a" href="https://maps.google.lk/maps?hl=en">
+                    <div class="span-1"><span class="icon" id="three"></span>
+                        <div></div>
+                    </div><span class="span-3">Maps</span>
+                </a></li>
+            <li class="aside-li"><a class="a-l-a" href="https://www.youtube.com/">
+                    <div class="span-1"><span class="icon" id="four"></span></div><span class="span-3">YouTube</span>
+                </a></li>
+            <li class="aside-li"><a class="a-l-a" href="https://play.google.com/?hl=en">
+                    <div class="span-1"><span class="icon" id="five"></span></div><span class="span-3">Play</span>
+                </a></li>
+            <li class="aside-li"><a class="a-l-a" href="https://news.google.com/">
+                    <div class="span-1"><span class="icon" id="six"></span></div><span class="span-3">News</span>
+                </a></li>
+            <li class="aside-li"><a class="a-l-a" href="https://mail.google.com/mail/">
+                    <div class="span-1"><span class="icon" id="seven"></span></div><span class="span-3">Gmail</span>
+                </a></li>
+            <li class="aside-li"><a class="a-l-a" href="https://meet.google.com?hs=197">
+                    <div class="span-1"><span class="icon" id="eight"></span></div><span class="span-3">Meet</span>
+                </a></li>
+            <li class="aside-li"><a class="a-l-a" href="https://chat.google.com/">
+                    <div class="span-1"><span class="icon" id="nine"></span></div><span class="span-3">Chat</span>
+                </a></li>
+            <li class="aside-li"><a class="a-l-a" href="https://contacts.google.com/?hl=en">
+                    <div class="span-1"><span class="icon" id="ten"></span></div><span class="span-3">Contacts</span>
+                </a></li>
+            <li class="aside-li"><a class="a-l-a" href="https://drive.google.com/">
+                    <div class="span-1"><span class="icon" id="eleven"></span></div><span class="span-3">Drive</span>
+                </a></li>
+            <li class="aside-li"><a class="a-l-a" href="https://calendar.google.com/calendar">
+                    <div class="span-1"><span class="icon" id="twelve"></span></div><span class="span-3">Calendar</span>
+                </a></li>
+            <li class="aside-li"><a class="a-l-a" href="https://translate.google.lk/?hl=en">
+                    <div class="span-1"><span class="icon" id="thirteen"></span></div><span
+                        class="span-3">Translate</span>
+                </a></li>
+            <li class="aside-li"><a class="a-l-a" href="https://photos.google.com/?pageId=none">
+                    <div class="span-1"><span class="icon" id="fourteen"></span></div><span class="span-3">Photos</span>
+                </a></li>
+            <li class="aside-li"><a class="a-l-a" href="https://duo.google.com/?usp=duo_ald">
+                    <div class="span-1"><span class="icon" id="fifteen"></span></div><span class="span-3">Duo</span>
+                </a></li>
+            <li class="aside-li"><a class="a-l-a" href="https://www.google.lk/shopping?hl=en&amp;source=og">
+                    <div class="span-1"><span class="icon" id="sixteen"></span></div><span
+                        class="span-3">Shopping</span>
+                </a></li>
+        </ul>
+        
+        <ul class="aside-ul-2">
+            <li class="aside-li-2"><a class="a-l-a-2"
+                    href="https://myaccount.google.com/?utm_source=OGB&amp;utm_medium=app">
+                    <div class="span-1"><span class="icon" id="one-2"></span></div><span class="span-3">Finance</span>
+                </a></li>
+            <li class="aside-li-2"><a class="a-l-a-2" href="https://www.google.lk/webhp">
+                    <div class="span-1"><span class="icon" id="two-2"></span></div><span class="span-3">Docs</span>
+                </a></li>
+            <li class="aside-li-2"><a class="a-l-a-2" href="https://maps.google.lk/maps?hl=en">
+                    <div class="span-1"><span class="icon" id="three-2"></span><div><span class="span-3">Sheets</span>
+                </a></li>
+            <li class="aside-li-2"><a class="a-l-a-2" href="https://www.youtube.com/">
+                    <div class="span-1"><span class="icon" id="four-2"></span></div><span class="span-3">Slides</span>
+                </a></li>
+            <li class="aside-li-2"><a class="a-l-a-2" href="https://play.google.com/?hl=en">
+                    <div class="span-1"><span class="icon" id="five-2"></span></div><span class="span-3">Books</span>
+                </a></li>
+            <li class="aside-li-2"><a class="a-l-a-2" href="https://news.google.com/">
+                    <div class="span-1"><span class="icon" id="six-2"></span></div><span class="span-3">Bloger</span>
+                </a></li>
+            <li class="aside-li-2"><a class="a-l-a-2" href="https://mail.google.com/mail/">
+                    <div class="span-1"><span class="icon" id="seven-2"></span></div><span class="span-3">Hangouts</span>
+                </a></li>
+            <li class="aside-li-2"><a class="a-l-a-2" href="https://meet.google.com?hs=197">
+                    <div class="span-1"><span class="icon" id="eight-2"></span></div><span class="span-3">Keep</span>
+                </a></li>
+            <li class="aside-li-2"><a class="a-l-a-2" href="https://chat.google.com/">
+                    <div class="span-1"><span class="icon" id="nine-2"></span></div><span class="span-3">Jamboard</span>
+                </a></li>
+            <li class="aside-li-2"><a class="a-l-a-2" href="https://contacts.google.com/?hl=en">
+                    <div class="span-1"><span class="icon" id="ten-2"></span></div><span class="span-3">Classroom</span>
+                </a></li>
+            <li class="aside-li-2"><a class="a-l-a-2" href="https://drive.google.com/">
+                    <div class="span-1"><span class="icon" id="eleven-2"></span></div><span class="span-3">Earth</span>
+                </a></li>
+            <li class="aside-li-2"><a class="a-l-a-2" href="https://calendar.google.com/calendar">
+                    <div class="span-1"><span class="icon" id="twelve-2"></span></div><span class="span-3">Collections</span>
+                </a></li>
+            <li class="aside-li-2"><a class="a-l-a-2" href="https://translate.google.lk/?hl=en">
+                    <div class="span-1"><span class="icon" id="thirteen-2"></span></div><span
+                        class="span-3">Arts and Crafts</span>
+                </a></li>
+            <li class="aside-li-2"><a class="a-l-a-2" href="https://photos.google.com/?pageId=none">
+                    <div class="span-1"><span class="icon" id="fourteen-2"></span></div><span class="span-3">Google Ads</span>
+                </a></li>
+            <li class="aside-li-2"><a class="a-l-a-2" href="https://duo.google.com/?usp=duo_ald">
+                    <div class="span-1"><span class="icon" id="fifteen-2"></span></div><span class="span-3">Podcasts</span>
+                </a></li>
+            <li class="aside-li-2"><a class="a-l-a-2" href="https://www.google.lk/shopping?hl=en&amp;source=og">
+                    <div class="span-1"><span class="icon" id="sixteen-2"></span></div><span
+                        class="span-3">Forms</span>
+                </a></li>
+        </ul>
+
+        <div id="more-on-google">
+            <a href="">More on Google</a>
+        </div>
+        </div>
+    </aside>
 </body>
+
 </html>
