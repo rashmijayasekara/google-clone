@@ -1,8 +1,6 @@
 ## Google Clone 
 ### About the Project
-
-A clone of the Google.com search engine with HTML5 and CSS3. Here we have generated and displayed the search results by consuming Google Web Services. <strong>Media Queries</strong> have been used in this project to make website responsive. <strong>Grid Layout</strong> have been used in Google app sub menu.
-
+A clone of the Google.com search engine with HTML5 and CSS3. Here we have generated and displayed the search results by consuming Google Web Services. <strong>Media Queries</strong> have been used in this project to make the website responsive. <strong> Grid Layout</strong> has been used in the Google app sub-menu.
 ### Build with
 - HTML 5
 - CSS 3
