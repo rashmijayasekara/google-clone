@@ -25,7 +25,7 @@ header a{
     fill: #5f6368;
 }
 header{
-    display: flex; /*giving the flex layout to the children inside the header*/
+    display: flex; 
     justify-content: flex-end;
     padding: 6px;
     height: 60px;
