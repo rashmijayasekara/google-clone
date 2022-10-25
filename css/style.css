@@ -450,3 +450,35 @@ aside{
   scrollbar-color: lightblue;
 
 }
+#popup{
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    width: 450px;
+    background-color: #8a8a8a69;
+    z-index: 999;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 1px #000000ab;
+}
+
+#close-wrapper{
+    position: absolute;
+    padding: 5px 0;
+    cursor: pointer;
+}
+#close-wrapper:hover{
+    color: red;
+}
+#popup p{
+    padding-top: 35px;
+}
+#close-wrapper ion-icon{
+    vertical-align: sub;
+    padding-right: 5px;
+    background-color: red;
+    border-radius: 100%;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+}
