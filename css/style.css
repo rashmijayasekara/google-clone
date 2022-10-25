@@ -193,7 +193,7 @@ input{
 }
 .c-1:hover{
     cursor: pointer;
-    user-select: none;  /*so that user can't select the parts inside the buttons*/
+    user-select: none;  
     border: 1px solid lightgray;
     border-radius: 10px;
 }
